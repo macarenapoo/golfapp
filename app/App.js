@@ -1,11 +1,13 @@
 import React, { PropTypes } from 'react';
-import ScoreCard from './ScoreCard/ScoreCard';
+import ScoreCard from './ScoreCard/';
 
 const App = React.createClass({
-  render () {
+  render ( ) {
+    const store = this.props.store;
+
     return (
       <div>
-        <ScoreCard />
+        <ScoreCard store={ store }/>
       </div>
     )
   }

@@ -26,6 +26,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: cssLoader
+      },
+      {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader"
       }
     ],
 
